@@ -11,7 +11,7 @@ class ProductController extends Controller
      */
     public function index()
     {
-        //
+        return 'index';
     }
 
     /**
@@ -19,7 +19,7 @@ class ProductController extends Controller
      */
     public function create()
     {
-        //
+        return 'create';
     }
 
     /**
@@ -27,38 +27,38 @@ class ProductController extends Controller
      */
     public function store(Request $request)
     {
-        //
+        return 'store';
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(string $product)
     {
-        //
+        return 'show ' . $product;
     }
 
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(string $product)
     {
-        //
+        return 'edit ' . $product;
     }
 
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, string $product)
     {
-        //
+        return 'update';
     }
 
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy(string $id)
+    public function destroy(string $product)
     {
-        //
+        return 'destroy';
     }
 }
