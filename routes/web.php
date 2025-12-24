@@ -8,7 +8,7 @@ use App\Http\Controllers\ProductController;
 Route::get('/', function () {
     return view('welcome');
 })->name('home');
-Route::resource('project',ProductController::class);
+Route::resource('products',ProductController::class);
 /*
   products.index    GET                  /                       ProductController@index
                     列出所有產品
@@ -47,8 +47,6 @@ Route::middleware(['auth'])->group(function () {
         )
         ->name('two-factor.show');
 });
-
-Route::resource('products', ProductController::class);
 
 // Resource Routes for products:
 //
